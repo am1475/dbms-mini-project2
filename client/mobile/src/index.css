@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Testimonial scrolling animations */
+.scroll-left {
+  display: flex;
+  animation: scroll-left 20s linear infinite;
+}
+
+.scroll-right {
+  display: flex;
+  animation: scroll-right 20s linear infinite;
+}
+
+/* Keyframe for left to right scrolling */
+@keyframes scroll-left {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Keyframe for right to left scrolling */
+@keyframes scroll-right {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+/* Card styling */
+.testimonial-card {
+  min-width: 200px; /* Minimum width */
+  max-width: 250px; /* Maximum width to prevent overflow */
+  padding: 12px; /* Adjusted padding */
+  border-radius: 12px; /* Rounded corners */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: transform 0.2s ease-in-out;
+  overflow-wrap: break-word; /* Allows breaking long words */
+  word-wrap: break-word; /* Ensures long words wrap */
+  hyphens: auto; /* Enables hyphenation for long words if necessary */
+}
+
+.testimonial-card:hover {
+  transform: scale(1.05);
+}
+
+/* Optional: Center the cards vertically */
+.flex {
+  align-items: center; /* Center items vertically */
+}
+
+/* Additional responsive adjustments */
+@media (max-width: 640px) {
+  .testimonial-card {
+    min-width: 150px; /* Smaller minimum width for mobile */
+  }
+}
