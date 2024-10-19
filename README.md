@@ -47,7 +47,7 @@ Before running this project, ensure that you have the following software install
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/mobile-recharge-system.git
+git clone https://github.com/am1475/dbms-mini-project2.git
 cd mobile-recharge-system
 ```
 
