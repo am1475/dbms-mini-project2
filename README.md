@@ -1,5 +1,5 @@
 
-** Mobile Recharge System**
+## Mobile Recharge System
 
 A mobile recharge web application built using React, Flask, MySQL, and Tailwind CSS. This application allows users to recharge mobile numbers, view recharge plans, and generate a PDF receipt with a QR code.
 
